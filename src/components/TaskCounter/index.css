@@ -1,0 +1,33 @@
+.TaskCounter {
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorTwo);
+}
+
+.TaskCounter-h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--colorFive);
+  user-select: none;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  .TaskCounter {
+    width: 98%;
+    margin: auto;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .TaskCounter {
+    margin-left: 1%;
+  }
+}

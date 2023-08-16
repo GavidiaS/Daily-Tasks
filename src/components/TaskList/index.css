@@ -1,0 +1,26 @@
+.TaskList {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--colorTwo); */
+  overflow: auto;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .TaskList {
+    width: 98%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .TaskList {
+    margin-left: 1%;
+  }
+}

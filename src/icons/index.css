@@ -1,0 +1,42 @@
+.Icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.Icon-neutral {
+  font-weight: bold;
+  left: 0;
+}
+
+.Icon-check {
+  font-weight: bold;
+  left: 0;
+}
+
+.Icon-delete {
+  position: absolute;
+  right: 0;
+}
+
+.Icon-neutral:hover .Icon-svg {
+  fill: #777;
+}
+
+.Icon-check:hover .Icon-svg {
+  fill: #484;
+}
+
+.Icon-delete:hover .Icon-svg {
+  fill: #F22;
+}
+
+.Icon-svg {
+  width: 24px;
+  height: 24px;
+  transition: all .3s linear;
+}

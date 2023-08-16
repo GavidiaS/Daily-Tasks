@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+:root {
+  --colorOne: #0a1128;
+  --colorTwo: #001f54;
+  --colorThree: #034078;
+  --colorFour: #1282a2;
+  --colorFive: #fefcfb;
+}
+
+* {
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, var(--colorOne), var(--colorThree));
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--colorFive);
+  text-align: center;
+  line-height: 8rem;
+  user-select: none;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-left: 52%;
+  }
+  h1 {
+    font-size: 4rem;
+    width: 400px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: var(--colorFive);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorThree);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--colorOne);
+}

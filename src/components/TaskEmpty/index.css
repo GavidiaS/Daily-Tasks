@@ -1,0 +1,25 @@
+.TaskEmpty {
+  background: none;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ocultar 3s alternate infinite;
+}
+
+.TaskEmpty p {
+  font-size: 2rem;
+  color: var(--colorFive);
+  text-align: center;
+  user-select: none;
+}
+
+@keyframes ocultar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

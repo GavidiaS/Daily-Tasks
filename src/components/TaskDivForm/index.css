@@ -1,0 +1,68 @@
+.TaskDivForm {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .TaskDivForm {
+    display: block;
+    width: 48%;
+    max-width: 400px;
+    height: 95%;
+    background-color: var(--colorOne);
+    position: absolute;
+    top: 2.5%;
+    left: calc(50% - 384px);
+    border-radius: 20px;
+    padding: 40px 20px;
+  }
+  .TaskDivForm-form {
+    width: 90%;
+    margin: auto;
+  }
+  .TaskDivForm-textarea {
+    border: none;
+    width: 100%;
+    height: 250px;
+    background-color: var(--colorFive);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--colorOne);
+    transition: all .2s linear;
+  }
+  .TaskDivForm-textarea::placeholder {
+    color: var(--colorOne);
+  }
+  .TaskDivForm-textarea:hover, .TaskDivForm-textarea:focus {
+    outline: 4px solid var(--colorFour);
+  }
+  .TaskDivForm-buttonContainer {
+    width: 90%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+  }
+  .TaskDivForm-button {
+    outline: none;
+    border: none;
+    background: var(--colorFour);
+    width: 100px;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--colorFive);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+  .TaskDivForm-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 8px 3px #000;
+  }
+  .TaskDivForm-img {
+    width: 80%;
+    margin-top: 60%;
+  }
+}

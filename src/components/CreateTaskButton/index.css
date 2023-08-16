@@ -1,0 +1,30 @@
+.CreateTaskButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--colorFive);
+  background-color: var(--colorFour);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all .4s linear;
+  z-index: 5;
+}
+
+.CreateTaskButton:hover {
+  transform: rotate(225deg);
+}
+
+@media screen and (min-width: 800px) {
+  .CreateTaskButton {
+    display: none;
+  }
+}

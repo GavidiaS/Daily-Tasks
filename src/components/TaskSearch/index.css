@@ -1,0 +1,40 @@
+.TaskSearch {
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorTwo);
+  margin: 15px 0;
+}
+
+.TaskSearch-input {
+  width: 100%;
+  max-width: 250px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: var(--colorOne);
+}
+
+.TaskSearch-input::placeholder {
+  color: var(--colorOne);
+}
+
+@media screen and (min-width: 400px) {
+  .TaskSearch {
+    width: 98%;
+    margin: 15px auto;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .TaskSearch {
+    margin-left: 1%;
+  }
+}
